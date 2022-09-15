@@ -3,10 +3,15 @@
 				<title>Monkey Clicker</title>
 				<body background="icons/oml.png">
 				<h1>Monkey Clicker</h1>
+				<h3>Update 1: Achievements</h3>
 				<h3>Beat the other monkeys!!</h3>
 				<img src = "icons/cookie.png" id = "cookie" style = "width: 150px" onclick = "increment()">
 				<p>Monkey Clicked: <span id = "counter">0</span> </p>
-				<button id = "reset" onclick = "reset()">Reset</button>
+			<a>
+				<button id = "reset" style="background-color:#333333;color:#00FF00;border-radius:5px" onclick = "reset()">Reset</button>
+			</a>
+				<p id="nanchabissi"></p>
+				<p id="restededthing"></p>
 				<link rel="preconnect" href="https://fonts.googleapis.com">
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 				<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
@@ -16,24 +21,18 @@
 				function increment(){
 						clicks = clicks + 1;
 						counter.innerHTML = clicks;
+						document.getElementById("nanchabissi").innerHTML = "Clickin da monka! -- Congrats!"
 				}
 				function reset(){
 						clicks = 0;
 						counter.innerHTML = clicks;
+						document.getElementById("restededthing").innerHTML = "Why did you reset me? -- Congrats!"
 				}
 		</script>
 		<style>
 				body{
 					color: white;
 					font-family: 'Source Sans Pro', sans-serif;
-				}
-
-				button
-				{
-					font-size: 40px;
-					padding:10px
-					border-radius: 10px;
-					margin:20px;
 				}
 				
 				#counter{
