@@ -1,38 +1,35 @@
-
-
-<!DOCTYPE html>
-<script>
-    var cookiecount = 0;
-</script>
 <html>
-<head>
-  <title>Cookie game</title>
-  <body background="icons/twip.jpg">
-<body>
-  
-  <alert>apapapapapa</alert>
-  <link rel="stylesheet" href="style.css">
-  
-  <a href=# onclick="add()"><img src="icons/clicka.png"></a>
-  <br><br>
-  You got:
-  <input type="text0" id="text" disabled style= text-align:center>
-  <script>
-  function add() {
-      cookiecount = cookiecount + 1
-      document.getElementById('text').value = cookiecount;
-      document.title = cookiecount + = Cookies";
-  }
-  
-  </script>
-  
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700display=swap" rel=>
-  <img class="youtube-logo" src="icons/apaa.jpg">
-  <h1>Apes</h1>
-  <h2>I have a header</h2>
-  <h3>i like apes!</h3>
-  <p>apes.</p>
-  <p1>yea.</p1>
+		<body>
+				<title>Monkey Clicker</title>
+				<body background="icons/oml.png">
+				<h1>Monkey Clicker</h1>
+				<h3>Beat the other monkeys!!</h3>
+				<img src = "icons/cookie.png" id = "cookie" style = "width: 150px" onclick = "increment()">
+				<p>Monkey Clicked: <span id = "counter">0</span> </p>
+				<button id = "reset" onclick = "reset()">Reset</button>
+		</body>
+		<script>
+				var clicks = 0;
+				function increment(){
+						clicks = clicks + 1;
+						counter.innerHTML = clicks;
+				}
+				function reset(){
+						clicks = 0;
+						counter.innerHTML = clicks;
+				}
+		</script>
+		<style>
+				body{
+					color: white;
+				}
+				
+				#counter{
+					color: beige;
+				}
 
-</body>
+				#reset{
+					color: orange;
+				}
+		</style>
 </html>
