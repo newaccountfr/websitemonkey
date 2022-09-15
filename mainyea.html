@@ -1,12 +1,15 @@
 <html>
 		<body>
 				<title>Monkey Clicker</title>
-				<body background="icons/oml.png">
+				<body background="oml.png">
 				<h1>Monkey Clicker</h1>
 				<h3>Beat the other monkeys!!</h3>
-				<img src = "icons/cookie.png" id = "cookie" style = "width: 150px" onclick = "increment()">
+				<img src = "cookie.png" id = "cookie" style = "width: 150px" onclick = "increment()">
 				<p>Monkey Clicked: <span id = "counter">0</span> </p>
 				<button id = "reset" onclick = "reset()">Reset</button>
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+				<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 		</body>
 		<script>
 				var clicks = 0;
@@ -22,6 +25,7 @@
 		<style>
 				body{
 					color: white;
+					font-family: 'Source Sans Pro', sans-serif;
 				}
 				
 				#counter{
