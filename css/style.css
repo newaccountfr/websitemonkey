@@ -1,0 +1,128 @@
+body {
+	background-color: pink;
+	touch-action: manipulation;
+}
+
+html {
+	touch-action: manipulation;
+}
+
+#cursorImage:active {
+	transform: scale(.9);
+}
+
+#fourthColumn,
+#fifthColumn,
+#sixthColumn {
+	visibility: hidden;
+}
+
+.upgrades {
+	background-color: #5144c7;
+	border-radius: 28px;
+	border: 1px solid #2218ab;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Courier New;
+	font-size: 17px;
+	font-weight: bold;
+	padding: 16px 31px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #2d2766;
+}
+
+.upgrades:hover {
+	background-color: #392abf;
+}
+
+.upgrades:active {
+	position: relative;
+	top: 1px;
+}
+
+.row {
+	border: 0;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#wrapper {
+	padding: 25px;
+	font-style: bold;
+	display: inline-block;
+}
+
+#navBar {
+	background-color: lightpink !important;
+	border-bottom: 3px solid black;
+}
+
+#cursorCount {
+	font-size: 20px;
+	font-family: Courier New;
+}
+
+#w3-button {
+	position: fixed !important;
+	left: 5px;
+	top: 5px;
+}
+
+#ascend {
+	background-color: #5144c7;
+	border-radius: 14px;
+	border: 1px solid #2218ab;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Courier New;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 8px 16px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #2d2766;
+}
+
+#ascend:disabled {
+	background-color: #a19ec2;
+	border: 1px solid #a19ec2;
+}
+
+#firstColumn,
+#secondColumn,
+#thirdColumn,
+#fourthColumn,
+#fifthColumn {
+	border-right: 3px solid black;
+}
+
+#alert {
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	text-align: center;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	animation: fade 3s normal forwards ease-in-out;
+	animation-delay: 5s;
+	animation-iteration-count: 1;
+	display: none;
+}
+
+@keyframes fade {
+
+
+	0% {
+		opacity: 100%;
+	}
+	100% {
+		opacity: 0%;
+		visibility: hidden;
+	}
+}
+
+#reset {
+	margin-top: 10px;
+}
